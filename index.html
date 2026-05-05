@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chromex Coatings</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0a0a0a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background: black;
+    position: sticky;
+    top: 0;
+}
+
+nav h2 {
+    letter-spacing: 2px;
+}
+
+nav a {
+    color: white;
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #000, #1a1a1a);
+}
+
+.hero h1 {
+    font-size: 50px;
+}
+
+.hero span {
+    color: #00ffc3;
+}
+
+.hero p {
+    color: #aaa;
+    margin-top: 10px;
+}
+
+/* BUTTON */
+.btn {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #00ffc3;
+    color: black;
+    border: none;
+    cursor: pointer;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* PRODUCT CARD */
+.card {
+    background: #141414;
+    margin: 15px;
+    padding: 20px;
+    width: 260px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.price {
+    color: #00ffc3;
+    margin: 10px 0;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #777;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2>CHROMEX</h2>
+    <div>
+        <a href="#">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <h1><span>CHROMEX</span> COATINGS</h1>
+    <p>Professional Hydrochrome & Chrome Finishing Systems</p>
+    <button class="btn" onclick="order()">Order via WhatsApp</button>
+</section>
+
+<!-- PRODUCTS -->
+<section class="section" id="products">
+    <h2>Our Products</h2>
+    <div class="products">
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Hydrochrome Kit</h3>
+            <p>Complete chrome system</p>
+            <div class="price">$299</div>
+            <button class="btn" onclick="order()">Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Base Coat Paint</h3>
+            <p>High gloss base layer</p>
+            <div class="price">$49</div>
+            <button class="btn" onclick="order()">Buy</button>
+        </div>
+
+        <div class="card">
+            <img src="https://via.placeholder.com/250">
+            <h3>Spray Gun</h3>
+            <p>Professional tool</p>
+            <div class="price">$120</div>
+            <button class="btn" onclick="order()">Buy</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2>About Chromex</h2>
+    <p>
+        Chromex Coatings provides premium hydrochrome solutions, paints,
+        and professional tools for high-quality chrome finishing.
+    </p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+© 2026 Chromex Coatings | Australia
+</footer>
+
+<script>
+function order() {
+    window.open("https://wa.me/YOURNUMBER", "_blank");
+}
+</script>
+
+</body>
+</html>
